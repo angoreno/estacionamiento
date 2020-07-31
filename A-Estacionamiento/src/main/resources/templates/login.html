@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body class="row m-0 justify-content-center align-items-center vh-100">
+	<h1 class="">Hola [[${#httpservletRequest.remoteUser}]]!</h1>
+	<div class="container col-sm-4">
+		<div class="card text-center border-secondary mb-3 " Style="width:300px">
+			<div class="card-body">
+				<h5 class="card-title">Inicio se Sesion</h5>
+				<form action="/consulta" method="get">
+				  <div class="form-group">
+				    <label for="usuario">Usuario</label>
+				    <input type="text" class="form-control" id="usuario" name="usuario">
+				  </div>
+				  <div class="form-group">
+				    <label for="pass">Contraseña</label>
+				    <input type="password" class="form-control" id="pass" name="pass">
+				  </div>
+				  <button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
