@@ -32,10 +32,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		
 	}
 	
-	String[] resources = new String[]{
-            "/include/**","/css/**","/icons/**","/img/**","/js/**","/layer/**"
-    };
-	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
 		http
@@ -43,13 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.anyRequest()
 				.authenticated()
 				.and()
-				.httpBasic()
-				.and()
-			.logout()
-				.permitAll()
-				.logoutSuccessUrl("/login?logout");
-				
-		
+				.httpBasic();
+				 
 	}
 	
 
