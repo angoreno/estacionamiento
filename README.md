@@ -1,8 +1,7 @@
 # estacionamiento
 proyecto de consulta patente
-
-*Estacionamiento
-  *PPU
-  *Propietario
-  *Telefono
-  *Local
+* Estacionamiento
+  * PPU
+  * Propietario
+  * Telefono
+  * Local
